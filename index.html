@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <link rel="stylesheet" href="styles.css">
+    <title>FinTech</title>
+
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="container" id="fintech-models">
+        <div class="section-title">
+            <h2>Jenis Jenis Ekonomi Digital</h2>
+        </div>
+
+        <div class="card-grid">
+            <!-- Crowdfunding Card -->
+            <div class="card">
+                <div class="card-img" style="background-image: url(crowdfunding.jpeg)"></div>
+                <div class="card-content">
+                    <h3>Crowdfunding</h3>
+                    <p>Platform yang memungkinkan masyarakat umum memberikan dana secara online untuk mendukung proyek tertentu.</p>
+                    <a href="#" class="card-button" onclick="openModal('crowdfunding')">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+
+            <!-- Microfinancing Card -->
+            <div class="card">
+                <div class="card-img" style="background-image: url(microfinancing.png)"></div>
+                <div class="card-content">
+                    <h3>Microfinancing</h3>
+                    <p>Layanan pemberian pinjaman modal dalam jumlah kecil untuk masyarakat atau pengusaha mikro.</p>
+                    <a href="#" class="card-button" onclick="openModal('microfinancing')">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+
+            <!-- P2P Lending Card -->
+            <div class="card">
+                <div class="card-img" style="background-image: url(p2p.jpg)"></div>
+                <div class="card-content">
+                    <h3>Peer to Peer Lending</h3>
+                    <p>Platform yang menghubungkan langsung pemberi pinjaman dengan peminjam tanpa melalui bank.</p>
+                    <a href="#" class="card-button" onclick="openModal('p2p')">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Containers -->
+    <div class="modal-container" id="crowdfunding-modal">
+        <div class="modal">
+            <button class="close-button" onclick="closeModal('crowdfunding')">&times;</button>
+            <h2 class="modal-title">Crowdfunding</h2>
+            <div class="modal-content">
+                <h3>Apa itu Crowdfunding?</h3>
+                <p>Crowdfunding adalah sistem di mana masyarakat umum dapat memberikan dana secara online untuk mendukung proyek tertentu. Ini memungkinkan wirausahawan, seniman, atau organisasi mengumpulkan modal dari banyak orang dalam jumlah kecil melalui platform khusus.</p>
+                <br>
+                <h3>Bagaimana Cara Kerjanya?</h3>
+                <p>1. Pencetus ide atau proyek membuat kampanye di platform crowdfunding</p>
+                <p>2. Kampanye tersebut berisi deskripsi proyek, target dana, dan batas waktu pengumpulan</p>
+                <p>3. Masyarakat yang tertarik dapat memberikan donasi dalam berbagai jumlah</p>
+                <p>4. Jika target terpenuhi dalam batas waktu, pencetus ide akan menerima dana tersebut</p>
+                <br>
+                <h3>Contoh di Indonesia</h3>
+                <p>Kitabisa.com adalah salah satu platform crowdfunding terbesar di Indonesia. Platform ini fokus pada penggalangan dana untuk keperluan sosial, kesehatan, dan pendidikan.</p>
+                <br>
+                <h3>Keunggulan Crowdfunding</h3>
+                <p>• Membantu proyek kreatif dan sosial yang sulit mendapatkan pendanaan konvensional</p>
+                <p>• Memberikan akses pendanaan yang lebih demokratis</p>
+                <p>• Sekaligus menjadi platform pemasaran untuk ide atau proyek</p>
+                <p>• Memungkinkan validasi pasar sebelum produk atau layanan diluncurkan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="microfinancing-modal">
+        <div class="modal">
+            <button class="close-button" onclick="closeModal('microfinancing')">&times;</button>
+            <h2 class="modal-title">Microfinancing</h2>
+            <div class="modal-content">
+                
+                <h3>Apa itu Microfinancing?</h3>
+                <p>Microfinancing fokus pada pemberian pinjaman modal dalam jumlah kecil untuk masyarakat atau pengusaha mikro yang biasanya kesulitan mendapatkan akses ke perbankan tradisional. Ini membantu usaha kecil dan masyarakat berpenghasilan rendah mendapatkan dukungan keuangan.</p>
+                <br>
+                <h3>Bagaimana Cara Kerjanya?</h3>
+                <p>1. Platform fintech melakukan penilaian risiko terhadap calon peminjam</p>
+                <p>2. Pinjaman dalam jumlah kecil (mikro) diberikan dengan persyaratan yang lebih fleksibel</p>
+                <p>3. Peminjam mengembalikan pinjaman dengan cicilan reguler ditambah bunga</p>
+                <p>4. Peminjam yang berhasil dapat memperoleh pinjaman dengan jumlah lebih besar di masa mendatang</p>
+                <br>
+                <h3>Contoh di Indonesia</h3>
+                <p>Amartha adalah salah satu platform microfinancing yang fokus menyalurkan pinjaman kepada perempuan pengusaha mikro di pedesaan dengan sistem kelompok.</p>
+                <br>
+                <h3>Keunggulan Microfinancing</h3>
+                <p>• Memberikan akses keuangan bagi masyarakat yang tidak terlayani perbankan</p>
+                <p>• Membantu pengembangan usaha mikro dan kecil</p>
+                <p>• Persyaratan yang lebih sederhana dibandingkan kredit bank</p>
+                <p>• Membantu mengentaskan kemiskinan dan mendorong kemandirian ekonomi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="p2p-modal">
+        <div class="modal">
+            <button class="close-button" onclick="closeModal('p2p')">&times;</button>
+            <h2 class="modal-title">Peer to Peer Lending</h2>
+            <div class="modal-content">
+                <h3>Apa itu Peer to Peer Lending?</h3>
+                <p>Peer to Peer Lending adalah platform yang menghubungkan langsung pemberi pinjaman dengan peminjam tanpa melalui bank. Sistem ini memungkinkan individu atau usaha mendapatkan pinjaman secara digital dengan proses yang lebih cepat dan persyaratan yang lebih fleksibel dibandingkan perbankan konvensional.</p>
+                <br>
+                <h3>Bagaimana Cara Kerjanya?</h3>
+                <p>1. Peminjam mengajukan permohonan pinjaman melalui platform P2P</p>
+                <p>2. Platform melakukan verifikasi dan penilaian risiko peminjam</p>
+                <p>3. Jika disetujui, permohonan pinjaman ditampilkan ke calon pemberi pinjaman</p>
+                <p>4. Pemberi pinjaman memilih peminjam yang ingin didanai</p>
+                <p>5. Dana disalurkan ke peminjam setelah terkumpul</p>
+                <p>6. Peminjam mengembalikan pinjaman secara berkala dengan bunga</p>
+                <br>
+                <h3>Contoh di Indonesia</h3>
+                <p>Modalku dan Investree adalah contoh platform P2P lending yang populer di Indonesia, fokus pada pinjaman produktif untuk UKM.</p>
+                <br>
+                <h3>Keunggulan P2P Lending</h3>
+                <p>• Proses pengajuan dan persetujuan pinjaman yang lebih cepat</p>
+                <p>• Persyaratan yang lebih fleksibel dibandingkan bank</p>
+                <p>• Pemberi pinjaman mendapat alternatif investasi dengan imbal hasil menarik</p>
+                <p>• Membantu pendalaman pasar keuangan dengan menambah opsi pendanaan</p>
+            </div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
